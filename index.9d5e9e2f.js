@@ -1,0 +1,2 @@
+function e(e){for(var t=0;t<e.length;t++)if(e[t]!==e[t].toLowerCase())return e[0].toUpperCase()+e.slice(1,t)+" "+e.slice(t).toLowerCase();return e[0].toUpperCase()+e.slice(1)}document.querySelectorAll("input").forEach(function(t){var r=document.createElement("label");r.classList.add("field-label"),r.setAttribute("for",t.getAttribute("id")),r.textContent=e(t.getAttribute("name")),t.parentElement.prepend(r),t.setAttribute("placeholder",e(t.getAttribute("name")))});
+//# sourceMappingURL=index.9d5e9e2f.js.map
